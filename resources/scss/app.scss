@@ -45,7 +45,6 @@ main{
       
       .my-card:hover::before,
       .my-card:hover:after {
-        cursor: pointer;
         width: 100%;
         height: 100%;
         border-radius: 15px;
@@ -54,5 +53,27 @@ main{
       
       .my-card:hover:after {
         content: "Detailes...";
+      }
+
+      .my-show-card{
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        height: 320px;
+        background: #5ac8fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+
+      .my-back{
+        position: absolute;
+        top: 20px;
+        right: 20px;
       }
 }
